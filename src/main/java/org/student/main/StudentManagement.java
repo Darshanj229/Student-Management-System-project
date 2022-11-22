@@ -163,7 +163,7 @@ public class StudentManagement
 						} catch (SQLException e){
 							System.out.println("Invalid StudentID /CourseID");
 						}	
-							break;
+						 break;
 			        		
 					case 6:
 						status = false;
