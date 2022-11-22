@@ -145,6 +145,8 @@ public class StudentManagement
 						break;
 						
 					case 5:
+						try{
+							
 						  
 						   System.out.println("Enter studentID:");
 						   studentID = Integer.parseInt(bufferedReader.readLine());
@@ -158,7 +160,9 @@ public class StudentManagement
 						    
 						   StudentOperations.checkStudentStatus(studentID,courseID);
 						    
-						    
+						} catch (SQLException e){
+							System.out.println("Invalid StudentID /CourseID");
+						}	
 							break;
 			        		
 					case 6:
